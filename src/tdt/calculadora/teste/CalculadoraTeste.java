@@ -16,22 +16,33 @@ public class CalculadoraTeste {
 	}
 
 	@Test
-	public void deveriaSubtrairDoisValores() throws Exception{
+	public void deveriaSubtrairDoisValores() throws Exception {
 		int valorA = 5;
 		int valorB = 2;
 		Calculadora calculadora = new Calculadora();
 		int subtrai = calculadora.subtrai(valorA, valorB);
-		
+
 		assertEquals(3, subtrai);
 	}
-	
+
 	@Test
-	public void deveriaMultiplicarDoisValores() throws Exception{
+	public void deveriaMultiplicarDoisValores() throws Exception {
 		int valorA = 5;
 		int valorB = 2;
 		Calculadora calculadora = new Calculadora();
 		int multiplica = calculadora.multiplica(valorA, valorB);
-		
+
 		assertEquals(10, multiplica);
+
+	}
+
+	@Test
+	public void deveriaDividirDoisValores() throws Exception {
+		int valorA = 6;
+		int valorB = 2;
+		Calculadora calculadora = new Calculadora();
+		int divide = calculadora.divide(valorA, valorB);
+
+		assertEquals(3, divide);
 	}
 }
