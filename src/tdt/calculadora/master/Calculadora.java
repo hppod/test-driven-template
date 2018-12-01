@@ -1,4 +1,4 @@
-package tdt.calculadora.teste;
+package tdt.calculadora.master;
 
 public class Calculadora {
 

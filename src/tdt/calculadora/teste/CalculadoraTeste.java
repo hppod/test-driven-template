@@ -3,6 +3,8 @@ package tdt.calculadora.teste;
 import static org.junit.Assert.*;
 import org.junit.Test;
 
+import tdt.calculadora.master.Calculadora;
+
 public class CalculadoraTeste {
 
 	@Test
