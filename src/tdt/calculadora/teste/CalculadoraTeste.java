@@ -24,4 +24,14 @@ public class CalculadoraTeste {
 		
 		assertEquals(3, subtrai);
 	}
+	
+	@Test
+	public void deveriaMultiplicarDoisValores() throws Exception{
+		int valorA = 5;
+		int valorB = 2;
+		Calculadora calculadora = new Calculadora();
+		int multiplica = calculadora.multiplica(valorA, valorB);
+		
+		assertEquals(10, multiplica);
+	}
 }
