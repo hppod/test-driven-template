@@ -9,7 +9,8 @@ public class CalculadoraTeste {
 	public void deveriaSomarDoisValores() throws Exception {
 		int valorA = 1;
 		int valorB = 2;
-		int soma = 0;
+		Calculadora calculadora = new Calculadora();
+		int soma = calculadora.soma(valorA, valorB);
 
 		assertEquals(3, soma);
 	}
