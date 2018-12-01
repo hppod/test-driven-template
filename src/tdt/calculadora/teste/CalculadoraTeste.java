@@ -45,14 +45,12 @@ public class CalculadoraTeste {
 
 		assertEquals(3, divide);
 	}
-	
-	@Test
-	public void deveriaLancarUmaExcecaoIndicandoFalhaAoDividirUmNumeroPorZero() throws Exception{
+
+	@Test(expected = ArithmeticException.class)
+	public void deveriaLancarUmaExcecaoIndicandoFalhaAoDividirUmNumeroPorZero() throws Exception {
 		int valorA = 6;
 		int valorB = 0;
 		Calculadora calculadora = new Calculadora();
-		int divide = calculadora.divide(valorA, valorB);
-		
-		assertEquals(0, divide);
+		calculadora.divide(valorA, valorB);
 	}
 }
